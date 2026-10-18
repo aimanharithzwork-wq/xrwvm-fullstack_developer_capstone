@@ -1,7 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -25,44 +28,45 @@
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header" style="padding: 20px 15px; text-align: center;">
+      <h1>About Us</h1>
+      <p style="font-size: 1.1rem; margin-top: 10px; color: #333;">
+        Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
+      </p>
+    </div>
+    <div style="display: flex;flex-direction: row; margin:auto; width: 95%; justify-content: space-around; margin-bottom: 25px;">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+        <img class="card-img-top" src="/static/person1.jpg" alt="Alex Morgan" style="width: 100%; height: 260px; object-fit: cover;">
+        <div class="card-body" style="text-align: center;">
+          <p class="title">Alex Morgan</p>
+          <p><strong>President & CEO</strong></p>
+          <p class="card-text">Alex has over 18 years of leadership experience in automotive retail across North America.</p>
+          <p><a href="mailto:alex.morgan@bestcars.com">alex.morgan@bestcars.com</a></p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+        <img class="card-img-top" src="/static/person2.jpg" alt="Marcus Vance" style="width: 100%; height: 260px; object-fit: cover;">
+        <div class="card-body" style="text-align: center;">
+          <p class="title">Marcus Vance</p>
+          <p><strong>VP of Sales</strong></p>
+          <p class="card-text">Marcus oversees nationwide dealer partnerships, vehicle acquisitions, and transparent client pricing.</p>
+          <p><a href="mailto:marcus.vance@bestcars.com">marcus.vance@bestcars.com</a></p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <img class="card-img-top" src="/static/person3.jpg" alt="Elena Rostova" style="width: 100%; height: 260px; object-fit: cover;">
+        <div class="card-body" style="text-align: center;">
+          <p class="title">Elena Rostova</p>
+          <p><strong>Customer Relations Director</strong></p>
+          <p class="card-text">Elena is dedicated to delivering five-star customer care, transparent service, and post-purchase support.</p>
+          <p><a href="mailto:elena.rostova@bestcars.com">elena.rostova@bestcars.com</a></p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
-
+</body>
 </html>
