@@ -28,4 +28,3 @@ class CarMakeAdmin(admin.ModelAdmin):
 admin.site.register(CarMake, CarMakeAdmin)
 admin.site.register(CarModel, CarModelAdmin)
 admin.site.logout_template = 'registration/logged_out.html'
-

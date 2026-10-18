@@ -9,6 +9,7 @@ from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
 
+
 def custom_admin_logout(request):
     from django.contrib.auth import logout
     logout(request)
@@ -19,6 +20,7 @@ def custom_admin_logout(request):
         'site_header': 'Django administration',
         'has_permission': False,
     })
+
 
 urlpatterns = [
     path('admin/logout/', custom_admin_logout),
