@@ -1,0 +1,11 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 18, 2026 - 15:48:43
+Django version 6.1.2, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[18/Oct/2026 15:54:16] "GET / HTTP/1.1" 200 2679
+[18/Oct/2026 15:54:30] "GET /about/ HTTP/1.1" 200 3564
+[18/Oct/2026 15:54:45] "GET /contact/ HTTP/1.1" 200 3394

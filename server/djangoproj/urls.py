@@ -9,7 +9,19 @@ from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
 
+def custom_admin_logout(request):
+    from django.contrib.auth import logout
+    logout(request)
+    from django.shortcuts import render
+    return render(request, 'registration/logged_out.html', {
+        'title': 'Logged out',
+        'site_title': 'Django site admin',
+        'site_header': 'Django administration',
+        'has_permission': False,
+    })
+
 urlpatterns = [
+    path('admin/logout/', custom_admin_logout),
     path('admin/', admin.site.urls),
     path('djangoapp/', include('djangoapp.urls')),
     path('', TemplateView.as_view(template_name="Home.html")),
